@@ -1,0 +1,363 @@
+<!DOCTYPE.html>
+<html lang-en>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Rate-View-1.0</title>
+<style>
+  body{
+    overflow-x: hidden;
+    background: url('back-top.png');
+  }
+.back a:hover{
+  background: rgb(4, 31, 53);
+}
+.floating{
+    float: right;
+    display: inline;
+}
+ .form{
+     text-align: center;
+	padding-top:35px;
+}
+.form input:hover{
+  border:2px rgb(4, 31, 53) groove;
+
+}
+ input{
+	height: 35px;
+	width:455px;
+} 
+button{
+    padding: 5px 30px;
+}
+#footer{
+  display: inline;
+}
+.suggestions{
+    width: 30%;
+    min-width: 470px;
+    margin:1%;
+    margin-bottom: 0px;
+    padding: 15px;
+    float: left;
+    background-color:rgb(4, 31, 53) ;
+    border-radius:5px;
+}
+
+.section{
+    float:right;
+    padding-right: 20px;
+}
+.section h1{
+  font-size: 35px;
+  color:rgb(4, 31, 53);
+}
+.section h3{
+  font-size:25px ;
+  color: rgb(4, 31, 53);
+}
+.btn:hover {
+  background:rgb(8, 42, 70);
+  color: #fff;
+  border-radius: 5px;
+  border: #145081 ;
+  box-shadow: 0 0 5px #145081 ,
+              0 0 25px #145081 ,
+              0 0 50px #145081 ,
+              0 0 100px#145081 ;
+}
+.btn{
+  background-color: rgb(8, 42, 70);
+  border-color:rgb(8, 42, 70);
+  color: rgb(255,255,255);
+  transition: .5s;
+  padding: 10px 20px;
+  letter-spacing: 4px;
+  margin-top: 40px;
+}
+
+
+
+.site-footer
+{
+  background-color:rgb(8, 42, 70);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#ffffff;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998;
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced;
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6;
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+    <div class="container-fluid" style="margin:auto;padding:0px;">
+      <div class="bg img-fluid" style="background-image:url('back-top.png'); background-size: cover;height: 900px;background-attachment: fixed; ">
+    <nav class="nav ">
+        <!-- Brand -->
+        <a class="navbar-brand"style="padding-right:300px;" href="index.html"><img src="LOGO 2.png" alt="LOGO" style="width:150px;height:150px; padding:0;float: left;position: relative;margin:0;" ></a>
+      
+        <!-- Links -->
+        <div class="floating">
+        <ul class="nav px-5  " style="min-width:600px;" >
+          <li class="nav-item ">
+            <a class="nav-link" style="font-size:15px;color: rgb(236, 222, 235);" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link " style="font-size:15px;color:rgb(236, 222, 235) ;" href="#f00ter">CONTACT US</a>
+          </li>
+          <li class="nav-item"  >
+            <a class="nav-link " style="font-size:15px;color:rgb(236, 222, 235)" href="top_treanding.html">MOVIES</a>
+          </li>
+          <div class="nav-item">
+            <a  Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style=" font-size:15px ;color: rgb(236, 222, 235);" href="#" id="navbardrop" data-toggle="dropdown">
+            GENRE
+            </a>
+            <div class="dropdown-menu" style="background-color: rgb(8, 42, 70);">
+              <div class="back">
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="top_treanding.html">Top-Trending</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="comedy.html">Comedy</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="scifi.html">Sci-fi</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="horror.html">Horror</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="drama.html">Drama</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="crime.html">Crime</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="thriller.html">Thriller</a>
+              <a class="dropdown-item" style="color: rgb(236, 222, 235);" href="animation.html">Animation</a>
+            </div>
+            </div>
+          </li>
+        </div>
+        </ul>
+        </div>
+        <ul class="nav mx-5 px-5" style=" padding-left: 100px;">
+      <li class="nav-item" >
+        <a class="nav-link " style=" font-size: 15px;color: rgb(236, 222, 235);" href="login2.html">LOGIN</a>
+      </li>
+      <li class="nav-item"  >
+        <a class="nav-link " style="font-size:15px ;color: rgb(236, 222, 235);" href="signup2.html">SIGN UP</a>
+      </li>
+      </ul>
+
+
+      </nav>
+
+      <h1 style="text-align: center;padding-top: 300px ;color:rgb(8, 42, 70) ;">THE MOVIE UNIVERSE</h1>
+      <h1 style="text-align: center;color:rgb(236, 222, 235); font-size: 20px; text-transform: uppercase;">Search among 1000+ movies to find your perfect one!!</h1>
+      <form class="form">
+        <input  type="search" placeholder="Search" style="border: 1px rgb(8,42,70) solid;">
+        <button type="submit" class="btn btn-primary btn:hover" style="margin-bottom:44px;padding:5px 20px 5px 20px;">GO</button>
+        </form>
+    </div>
+
+
+    <footer class="site-footer" id="f00ter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About Us</h6>
+            <p class="text-justify"><b>Shubhangi Rai and Priyansha Singhal</b></p>
+            <p>We are also movie bingers like you,so one day we thought of making the task of selecting the next movie to watch, easier.
+              We thought of something that people can use to choose among a variety of movies.Hence, Rate-view will show you ratings of various movies based on the genre that you select. </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li>
+              <li><a style="color: rgb(236, 222, 235);" href="top_treanding.html">Top-Trending</a>
+              </li>
+              <li><a  style="color: rgb(236, 222, 235);" href="comedy.html">Comedy</a></li>
+              <li><a style="color: rgb(236, 222, 235);" href="scifi.html">Sci-fi</a></li>
+              <li><a  style="color: rgb(236, 222, 235);" href="horror.html">Horror</a></li>
+              <li><a style="color: rgb(236, 222, 235);" href="drama.html">Drama</a></li>
+              <li><a  style="color: rgb(236, 222, 235);" href="crime.html">Crime</a></li>
+              <li><a  style="color: rgb(236, 222, 235);" href="thriller.html">Thriller</a></li>
+              <li><a  style="color: rgb(236, 222, 235);" href="animation.html">Animation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Contact Us</h6>
+            <ul class="footer-links">
+              <li>Phone : 4564-xxxxxx</li>
+              <li>Email:rateview@xxxxxx</li>
+              <li class=py-3><b>Based in:</b></li>
+              <li>Ghaziabad,India</li>
+              <li style="font-size: 20px;" class=py-3>HAPPY BINGING </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+          </div>
+        </div>
+      </div>
+</footer>
+</div>
+</body>
